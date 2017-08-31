@@ -36,4 +36,5 @@ Route::group(['middleware' => ['web','admin.login']], function () {
     Route::resource('admin/navs','Admin\navsController');
     Route::resource('admin/config','Admin\configController');
     Route::post('admin/config/changecontent','Admin\configController@changecontent');
+    Rout::post('admin/users/add','Adim\userscontroller@add');
 });
