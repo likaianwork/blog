@@ -66,6 +66,7 @@ class configController extends CommonController
 
         }else{
              return back()->withErrors($validator);
+            echo"hello";
         }
 
 
